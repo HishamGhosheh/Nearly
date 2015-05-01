@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_api_key" translatable="false">AIzaSyAkbF_N35U9opx5dlXsPPYp86ALBZ141Z0</string>
+    <string name="google_browser_key" translatable="false">AIzaSyDqTYCNWuENiSZmoApWlL7TYUZrDlmdluE</string>
+
+</resources>

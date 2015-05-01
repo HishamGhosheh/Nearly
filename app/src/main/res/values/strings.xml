@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Titles -->
+    <string name="app_name">Nearly!</string>
+
+    <string name="title_activity_favorites">My Favorites</string>
+    <string name="title_activity_gallery">Place Gallery</string>
+    <string name="title_activity_image_viewer">Image Viewer</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_share">Share</string>
+    <string name="action_wallpaper">Wallpaper</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_remove_favorite">Remove favorite</string>
+
+    <!-- Favorites Activity -->
+    <string name="long_press_remove">Long press to remove</string>
+    <string name="added_successfully">Successfully added to favorites</string>
+    <string name="add_failed">Failed to add to favorites</string>
+
+    <!-- Main Activity -->
+    <string name="photos_count_fmt">%s photos</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="loading_data">Loading data</string>
+    <string name="waiting_location_update">Waiting location update</string>
+
+    <string name="get_places_failed">Couldn\'t load nearby places</string>
+
+    <!-- Gallery -->
+    <string name="no_photos">No photos for this place</string>
+    <string name="get_place_details_failed">Failed to get place details</string>
+
+    <!-- Image Viewer-->
+    <string name="download_started">Download started</string>
+    <string name="wallpaper_updated">Wallpaper_updated</string>
+    <string name="photo_saved">Saved successfully</string>
+    <string name="wallpaper_change_failed">Failed to change wallpaper</string>
+    <string name="photo_download_failed">Couldn\'t download photo</string>
+    <string name="share_via">Share via</string>
+</resources>

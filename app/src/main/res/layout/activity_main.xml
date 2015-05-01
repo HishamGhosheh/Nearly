@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/vTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <!-- TODO selector background -->
+        <TextView
+            android:id="@+id/vShowListing"
+            style="@style/TabStyle"
+            android:text="Places List" />
+
+        <include layout="@layout/inc_divider_v" />
+
+        <TextView
+            android:id="@+id/vShowMap"
+            style="@style/TabStyle"
+            android:text="Places Map" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_below="@+id/vTabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

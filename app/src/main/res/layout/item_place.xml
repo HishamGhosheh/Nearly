@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgPlaceIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imgPlaceIcon"
+        android:layout_toRightOf="@+id/imgPlaceIcon"
+        android:text="[place name]"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPlacePhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPlaceName"
+        android:layout_alignStart="@+id/tvPlaceName"
+        android:layout_below="@+id/tvPlaceName"
+        android:text="[5 photos]"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

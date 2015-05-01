@@ -1,0 +1,17 @@
+# --table-start--
+dataClass=me.ghoscher.nearly.model.Place
+tableName=places
+# --table-fields-start--
+# --field-start--
+fieldName=id
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=icon
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
