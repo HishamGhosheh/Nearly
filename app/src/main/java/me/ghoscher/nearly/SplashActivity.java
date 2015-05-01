@@ -59,7 +59,7 @@ public class SplashActivity extends FragmentActivity
                 }
             } else {
                 // TODO show dialog error
-                Toast.makeText(this, "Your device doesn't support Google Play Services", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.play_services_not_supported, Toast.LENGTH_LONG).show();
                 finish();
             }
         }

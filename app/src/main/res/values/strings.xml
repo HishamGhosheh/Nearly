@@ -7,6 +7,7 @@
     <string name="title_activity_gallery">Place Gallery</string>
     <string name="title_activity_image_viewer">Image Viewer</string>
 
+    <!-- Menu Actions -->
     <string name="action_save">Save</string>
     <string name="action_share">Share</string>
     <string name="action_wallpaper">Wallpaper</string>
@@ -38,4 +39,7 @@
     <string name="wallpaper_change_failed">Failed to change wallpaper</string>
     <string name="photo_download_failed">Couldn\'t download photo</string>
     <string name="share_via">Share via</string>
+
+    <!-- Misc -->
+    <string name="play_services_not_supported">Your device doesn\'t support Google Play Services</string>
 </resources>

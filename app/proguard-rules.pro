@@ -16,6 +16,10 @@
 #   public *;
 #}
 
+-keep class com.koushikdutta.** {*;}
+
+-keepattributes SourceFile,LineNumberTable
+
 -keep class * extends java.util.ListResourceBundle {
     protected Object[][] getContents();
 }
@@ -34,6 +38,9 @@
 }
 
 # OrmLite uses reflection
+# Application classes that will be serialized/deserialized over Gson
+-keep class me.ghoscher.nearly.model.** { *; }
+
 -keep class com.j256.**
 -keepclassmembers class com.j256.** { *; }
 -keep enum com.j256.**
