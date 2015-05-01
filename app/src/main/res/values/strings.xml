@@ -33,7 +33,7 @@
 
     <!-- Image Viewer-->
     <string name="download_started">Download started</string>
-    <string name="wallpaper_updated">Wallpaper_updated</string>
+    <string name="wallpaper_updated">Wallpaper updated</string>
     <string name="photo_saved">Saved successfully</string>
     <string name="wallpaper_change_failed">Failed to change wallpaper</string>
     <string name="photo_download_failed">Couldn\'t download photo</string>

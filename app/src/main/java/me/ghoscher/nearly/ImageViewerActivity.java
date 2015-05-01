@@ -3,6 +3,7 @@ package me.ghoscher.nearly;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -129,7 +130,11 @@ public class ImageViewerActivity extends BaseActivity {
             @Override
             public void onCompleted(Exception e, File result) {
                 makeToast(R.string.photo_saved);
-                // Nothing else to do, photo already saved
+
+                MediaScannerConnection.scanFile(ImageViewerActivity.this
+                        , new String[]{result.getAbsolutePath()}
+                        , new String[]{"image/png"}
+                        , null);
             }
         });
     }
@@ -146,7 +151,7 @@ public class ImageViewerActivity extends BaseActivity {
                     WallpaperManager wm = WallpaperManager.getInstance(ImageViewerActivity.this);
                     wm.setStream(in);
 
-                    makeToast(R.string.download_started);
+                    makeToast(R.string.wallpaper_updated);
 
                 } catch (IOException e1) {
                     e1.printStackTrace();
@@ -163,9 +168,15 @@ public class ImageViewerActivity extends BaseActivity {
         // TODO: check storage state and better manage photo naming
         // TODO: image extension
         if (TextUtils.isEmpty(filename))
-            filename = "nearly_temp.jpeg";
+            filename = "nearly_temp";
 
-        String photoPath = getExternalFilesDir(Environment.DIRECTORY_PICTURES) + File.separator + filename;
+        File dir = new File(Environment.getExternalStorageDirectory() + File.separator + "Nearly");
+        dir.mkdirs();
+
+        String photoPath = dir
+                + File.separator
+                + filename
+                + ".jpeg";
 
         makeToast(R.string.download_started, Toast.LENGTH_SHORT);
 
