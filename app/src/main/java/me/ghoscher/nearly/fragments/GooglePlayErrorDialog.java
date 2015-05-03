@@ -51,8 +51,9 @@ public class GooglePlayErrorDialog extends DialogFragment {
         reqCode = getArguments().getInt("req_code");
     }
 
+    @NonNull
     @Override
-    public Dialog getDialog() {
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Create the wrapped dialog
         return GooglePlayServicesUtil.getErrorDialog(errorCode, getActivity(), reqCode, internalCancelListener);
     }

@@ -53,8 +53,8 @@ public class SplashActivity extends FragmentActivity
                 GooglePlayErrorDialog dlg = (GooglePlayErrorDialog) getSupportFragmentManager().findFragmentByTag(FRG_ERROR_DIALOG);
 
                 // Avoid displaying multiple dialogs
-                if (dlg != null) {
-                    GooglePlayErrorDialog.newInstance(playServicesError, REQ_GET_PLAY_SERVICES);
+                if (dlg == null) {
+                    dlg = GooglePlayErrorDialog.newInstance(playServicesError, REQ_GET_PLAY_SERVICES);
                     dlg.show(getSupportFragmentManager(), FRG_ERROR_DIALOG);
                 }
             } else {
